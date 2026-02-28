@@ -36,6 +36,24 @@ const DeleteUser = ({ id }) => {
 
 ---
 
+```bash
+Click Button → mutation.mutate(id)
+             → deleteUser(id)
+             → axios.delete(...)
+             → onSuccess()
+             → invalidateQueries(["users"])
+             → users refetch
+             → UI updates
+```
+
+```bash
+Mutation → Server updated
+Cache outdated → Invalidate
+Query refetch → UI updates
+```
+
+---
+
 ## Difference Between useQuery & useMutation
 
 | useQuery           | useMutation              |
@@ -59,7 +77,9 @@ const DeleteUser = ({ id }) => {
 
 - Logging in
 
-Basically → Any server-side data change
+#### Basically → Any server-side data change
+
+---
 
 ## Summary
 
