@@ -6,7 +6,7 @@
 | Retry Logic        | Automatically retry failed request |
 | Cache Invalidation | Refetch updated queries            |
 
-## Code Snippet
+## Example
 
 ```JavaScript
 
@@ -35,7 +35,9 @@ const DeleteUser = ({ id }) => {
 ```
 
 ---
+
 ## Difference Between useQuery & useMutation
+
 | useQuery           | useMutation              |
 | ------------------ | ------------------------ |
 | Used for GET       | Used for POST/PUT/DELETE |
