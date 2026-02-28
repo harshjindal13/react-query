@@ -61,7 +61,7 @@ const DeleteUser = ({ id }) => {
 
 Basically → Any server-side data change
 
-## Summary (Interview Ready)
+## Summary
 
 - useMutation is used to modify server data.
 
